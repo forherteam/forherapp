@@ -14,8 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ForHer">
         <activity android:name=".Login" />
-        <activity android:name=".add" />
-        <activity android:name=".search" />
+        <activity android:name=".add"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".search"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".Register" />
 
 
@@ -27,8 +29,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

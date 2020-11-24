@@ -94,7 +94,7 @@
         android:background="@drawable/button_corn"
         android:fontFamily="@font/abhaya_libre"
         android:text="Register"
-        android:textColor="#0B0A0A"
+        android:textColor="#FDFBFB"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

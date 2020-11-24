@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
     public CardView cardReq;
@@ -37,9 +39,15 @@ public class MainActivity extends AppCompatActivity {
         cardLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut(); //logout
                 startActivity(new Intent(getApplicationContext(),Login.class));
             }
         });
+    }
+    @Override
+    public void onBackPressed()
+    {
+
     }
 
 }
