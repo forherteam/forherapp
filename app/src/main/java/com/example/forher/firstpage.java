@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class firstpage extends AppCompatActivity {
 
-    Button btnfirstpage;
+    Button btnfirstpage,login;
     FirebaseAuth fauth;
 
 
@@ -22,14 +22,8 @@ public class firstpage extends AppCompatActivity {
         setContentView(R.layout.activity_firstpage);
 
 
-        fauth = FirebaseAuth.getInstance();
-        if(fauth.getCurrentUser() != null){
-            startActivity(new Intent(getApplicationContext(),logged_in.class));
-            finish();
-
-        }
-
         btnfirstpage = findViewById(R.id.signupbtn);
+        login = findViewById(R.id.login);
 
 
         btnfirstpage.setOnClickListener(new View.OnClickListener() {
@@ -38,13 +32,20 @@ public class firstpage extends AppCompatActivity {
                 opensignup();
             }
         });
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Login.class));
+            }
+        });
         
 
     }
 
 
     private void opensignup() {
-        Intent intentsignup = new Intent(this,Login_page.class);
+        Intent intentsignup = new Intent(this,Register.class);
         startActivity(intentsignup);
 
     }
