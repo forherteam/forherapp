@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class AdapterClass extends RecyclerView.Adapter<com.example.forher.AdapterClass.MyViewHolder> {
+public class AdapterClass extends RecyclerView.Adapter<AdapterClass.MyViewHolder> {
 
     ArrayList<Problems> list;
     public AdapterClass(ArrayList<Problems> list)

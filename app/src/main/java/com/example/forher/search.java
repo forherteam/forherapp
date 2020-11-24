@@ -28,7 +28,7 @@ public class search extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
-        ref= FirebaseDatabase.getInstance().getReference().child("Equipments");
+        ref= FirebaseDatabase.getInstance().getReference().child("Problems");
         recyclerView= findViewById(R.id.rv);
         searchView=findViewById(R.id.searchView);
     }

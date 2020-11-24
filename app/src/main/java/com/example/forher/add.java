@@ -140,7 +140,7 @@ public class add extends AppCompatActivity {
         Probmap.put("Eid",EquipRandomKey);
         Probmap.put("name",Dname);
         Probmap.put("image",ImagePath);
-        Probmap.put("date&time",saveCurrentDate+" "+saveCurrentTime);
+        Probmap.put("date",saveCurrentDate+" "+saveCurrentTime);
         Probmap.put("place",Dplace);
         Probmap.put("phone",Dphone);
 
